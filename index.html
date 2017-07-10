@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="angularjs-starter">
+  
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Custom Plunker</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+    <script>
+      document.write('<base href="' + document.location + '" />');
+    </script>
+    <script src="app.js"></script>
+    
+  </head>
+  
+  <body ng-controller="MainCtrl">
+    
+    
+    <slider-range min="10" max="200" value-min="search.price_min" value-max="search.price_max"></slider-range>
+	<input type="text" ng-model="search.price_min"/>
+    <input type="text" ng-model="search.price_max"/>
+    
+
+  </body>
+
+</html>
